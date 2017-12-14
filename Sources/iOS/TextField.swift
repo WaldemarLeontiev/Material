@@ -239,6 +239,8 @@ open class TextField: UITextField {
             layoutPlaceholderLabel()
         }
     }
+    
+    open var placeholderDefaultVerticalOffset: CGFloat = 0
 
 	/// The detailLabel UILabel that is displayed.
 	@IBInspectable
@@ -556,7 +558,7 @@ fileprivate extension TextField {
         placeholderLabel.transform = CGAffineTransform.identity
 
         guard isEditing || !isEmpty || !isPlaceholderAnimated else {
-            placeholderLabel.frame = CGRect(x: w, y: 0, width: bounds.width - leftViewWidth - 2 * textInset, height: h)
+            placeholderLabel.frame = CGRect(x: w, y: 0 + placeholderDefaultVerticalOffset, width: bounds.width - leftViewWidth - 2 * textInset, height: h)
             return
         }
 
