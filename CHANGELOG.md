@@ -1,3 +1,112 @@
+## 2.16.4
+
+* [pr-1120](https://github.com/CosmicMind/Material/pull/1120): Fixed issue where TextField cursor was not being repositioned correctly.
+  * [issue-1119](https://github.com/CosmicMind/Material/issues/1119): Cursor position was incorrectly being positioned when toggling security entry.
+
+## 2.16.3
+
+* Updated to [Motion 1.4.3](https://github.com/CosmicMind/Motion/releases/tag/1.4.3)
+* [pr-1116](https://github.com/CosmicMind/Material/pull/1116): ViewController-oriented clean up.
+* [pr-1117](https://github.com/CosmicMind/Material/pull/1117): Fixed TextView font issue with emojis.
+  * [issue-838](https://github.com/CosmicMind/Material/issues/838): TextView's font breaks when you type emoji.
+
+## 2.16.2
+
+* [pr-1113](https://github.com/CosmicMind/Material/pull/1113): Added update() to Grid.
+* [pr-1112](https://github.com/CosmicMind/Material/pull/1112): Added tab bar centering.
+  * [issue-926](https://github.com/CosmicMind/Material/issues/926): TabsController - centering TabItem after selection.
+* [pr-1114](https://github.com/CosmicMind/Material/pull/1114): Added option to adjust tabBar line width.
+  * [issue-1109](https://github.com/CosmicMind/Material/issues/1109): Want to change TabBar line width.
+
+## 2.16.1
+
+* [issue-1110](https://github.com/CosmicMind/Material/issues/1110): Fixed an issue where the depth of a view was being clipped incorrectly. 
+* [pr-1111](https://github.com/CosmicMind/Material/pull/1111): Fixed TabItem - was not being changed on swipe.
+* [pr-1106](https://github.com/CosmicMind/Material/pull/1106): Added ability to show visibility and clear button at the same time.
+  * [issue-992](https://github.com/CosmicMind/Material/issues/992): Visibility & Clear Button can't be shown in TextField at the same time.
+* [pr-1104](https://github.com/CosmicMind/Material/pull/1104): Added missing devices.
+* [pr-1101](https://github.com/CosmicMind/Material/pull/1101): Enum for support iPhoneX.
+
+## 2.16.0
+
+* Updated to [Motion 1.4.2](https://github.com/CosmicMind/Motion/releases/tag/1.4.2).
+* [pr-1004](https://github.com/CosmicMind/Material/pull/1004): Added RadioButton/CheckButton and RadioButtonGroup/CheckButtonGroup.
+  * [issue-505](https://github.com/CosmicMind/Material/issues/505): Add RadioButton and Checkbox.
+* Updated to [Motion 1.4.0](https://github.com/CosmicMind/Motion/releases/tag/1.4.0). 
+  * [issue-1078](https://github.com/CosmicMind/Material/issues/1078): Update Motion Dependency.  
+* [pr-1047](https://github.com/CosmicMind/Material/pull/1047): Document material color codes.
+  * [issue-1000](https://github.com/CosmicMind/Material/issues/1000): Color: Document mapping from codes (e.g. a400) to names (e.g. accent1).  
+* [pr-1055](https://github.com/CosmicMind/Material/pull/1055): Open up FABMenu a little bit.  
+* Updated Copyright years.
+* [pr-1079](https://github.com/CosmicMind/Material/pull/1079): Added custom navigationBarClass support to NavigationController.
+  * [issue-1074](https://github.com/CosmicMind/Material/issues/1074): Need to use a NavigationBar subclass with NavigationController.
+* [pr-1080](https://github.com/CosmicMind/Material/pull/1080): Fixed license badge href.
+* [pr-1046](https://github.com/CosmicMind/Material/pull/1046): Added ShouldOpen and ShouldClose delegate methods to FABMenuDelegate.
+  * [issue-1043](https://github.com/CosmicMind/Material/issues/1043): ShouldOpen and ShouldClose delegate methods FABMenu.
+* [pr-1086](https://github.com/CosmicMind/Material/pull/1086): Fix delegations never fired on tab swipe.
+  * [issue-1087](https://github.com/CosmicMind/Material/issues/1087): TabBar item is selected even though TabsController delegate shouldSelect always returns false.
+  * [issue-1056](https://github.com/CosmicMind/Material/issues/1056): Delegation methods never fired on Tab swipe.
+* [pr-1088](https://github.com/CosmicMind/Material/pull/1088): Removed unnecessary convenience initializers.
+    * [issue-1085](https://github.com/CosmicMind/Material/issues/1085): `convenience init()` across the framework prevents generic initialization of the components.
+* [pr-1082](https://github.com/CosmicMind/Material/pull/1082): Added ErrorTextField validation.
+  * [issue-1017](https://github.com/CosmicMind/Material/issues/1017): Can we make the error detail for textfields dynamic?
+  * [issue-1053](https://github.com/CosmicMind/Material/issues/1053): TextField Detail Label not Layed-Out correctly with Left-Image.
+* [pr-1103](https://github.com/CosmicMind/Material/pull/1103): Added ability to change password visibility icons.
+* [pr-1097](https://github.com/CosmicMind/Material/pull/1097):: Added new extensions: UIColor(argb:), UIColor(rgb:), UIButton.fontSize, UILabel.fontSize.
+* [pr-1093](https://github.com/CosmicMind/Material/pull/1093):: Fix TextField placeholderLabel position.
+  * [issue-1092](https://github.com/CosmicMind/Material/issues/1092): TextField.placeholderLabel is positioned higher than before in version 2.x.x.
+* [pr-1103](https://github.com/CosmicMind/Material/pull/1103): Added ability to change password visibility icons.
+  * [issue-1012](https://github.com/CosmicMind/Material/issues/1012): Can we set visibility icon custom for password textfield.
+
+
+## 2.15.0
+
+* [issue-1057](https://github.com/CosmicMind/Material/issues/1057): Added image states for TabItems used in TabBar and TabsController.
+
+## 2.14.0
+
+* [issue-995](https://github.com/CosmicMind/Material/issues/995): Updated iOS 11 layout margins for NavigationBar.
+* [pr-1038](https://github.com/CosmicMind/Material/pull/1038): Merged PR for iOS 11 layout margins fix. 
+
+## 2.13.7
+
+* Updated TabsController to no longer force the default animation to change between tabs and not return to normal behavior.  
+* [issue-1044](https://github.com/CosmicMind/Material/issues/1044): Fixed issue where TabBar items were not correctly laying out. 
+
+## 2.13.6
+
+* [issue-841](https://github.com/CosmicMind/Material/issues/841): Adjusted default sizing for Switch to be more like the original sizing.
+* [pr-1030](https://github.com/CosmicMind/Material/pull/1032): Added workaround for known issue where trailing whitespace is apparent in UITextField.
+* Updated to [Motion 1.3.5](https://github.com/CosmicMind/Motion/releases/tag/1.3.5). 
+
+## 2.13.5
+
+* [pr-1019](https://github.com/CosmicMind/Material/pull/1019): Added swipe gesture handling to TabsController.
+* Updated to [Motion 1.3.4](https://github.com/CosmicMind/Motion/releases/tag/1.3.4).
+
+## 2.13.4
+
+* [issue-1016](https://github.com/CosmicMind/Material/issues/1016): Updated hierarchy traversal for TransitionController types to no longer skip over non TransitionController types. 
+
+## 2.13.3
+
+* [issue-1015](https://github.com/CosmicMind/Material/issues/1015): Fixed regression where view lifecycle functions were not being called.
+* Motion disabled by default for NavigationController to avoid unbalanced calls to view lifecycle when presenting a NavigationController modally. 
+* Updated to [Motion 1.3.3](https://github.com/CosmicMind/Motion/releases/tag/1.3.3).
+
+## 2.13.2
+
+* Updated to [Motion 1.3.2](https://github.com/CosmicMind/Motion/releases/tag/1.3.2).
+* Fixed unbalanced calls in Motion transitions.
+
+## 2.13.1
+
+* Updated to [Motion 1.3.1](https://github.com/CosmicMind/Motion/releases/tag/1.3.1). 
+
+## 2.13.0
+
+* Updated to [Motion 1.3.0](https://github.com/CosmicMind/Motion/releases/tag/1.3.0). 
+
 ## 2.12.19
 
 * [issue-997](https://github.com/CosmicMind/Material/issues/977): Fixed NavigationDrawerController where swiping off device caused a partial correct state.
